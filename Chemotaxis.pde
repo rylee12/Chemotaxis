@@ -1,8 +1,8 @@
 Bacteria [] xian;
 void setup()   
 {     
- size(500, 500);
- xian = new Bacteria[100];
+ size(700, 700);
+ xian = new Bacteria[400];
   for (int i = 0; i < xian.length; i++)
    {
      xian[i] = new Bacteria();
@@ -10,7 +10,7 @@ void setup()
 }   
 void draw()   
 {
-  background(205);
+  background(20);
   for (int i = 0; i < xian.length; i++)
    {
      xian[i].move();
@@ -23,8 +23,8 @@ class Bacteria
   boolean existence;
   Bacteria() //constructor
   {
-    myX = 250;
-    myY = 250;
+    myX = 350;
+    myY = 350;
     existence = true;
   }
   void move()
